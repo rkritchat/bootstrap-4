@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      .fakeImg1 {
+        height: 200px;
+        background: #aaa;
+      }
+
+      .fakeImg2 {
+        height: 520px;
+        background: #aaa;
+      }
+
+      .navbar-dark .navbar-nav .nav-item .nav-link:active {
+        color: lightseagreen;
+      }
+
+      .navbar-dark .navbar-nav .nav-link:hover,
+      .navbar-dark .navbar-nav .active > .nav-link,
+      .navbar-dark .navbar-nav .nav-link.active,
+      .navbar-dark .navbar-nav .nav-link.show,
+      .navbar-dark .navbar-nav .show > .nav-link:active {
+        color: lightseagreen;
+      }
+
+      .navbar-nav li {
+        padding-right: 30px;
+      }
+
+      .navbar {
+        text-transform: uppercase;
+      }
+      .logo {
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">
+        <img src="img/blockchain.svg" alt="test" class="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#nav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="margin-top: 50px">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+            labore debitis! Odit in illo labore corrupti velit nisi quas quis,
+            veritatis consequuntur perspiciatis nemo! Dolores reiciendis eveniet
+            veritatis esse molestiae!tis! Odit in illo labore corrupti velit
+            nisi quas quis, veritatis consequuntur perspiciatis nemo! Dolores
+            reiciendis eveniet veritatis esse molestiae!
+          </p>
+        </div>
+        <div class="col-md-8" style="margin-top: 50px">
+          <a href="#" data-toggle="tooltip" title="This is fake img">
+            <div class="fakeImg1"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 50px">
+        <div class="col-sm-7">
+          <div class="fakeImg2"></div>
+        </div>
+        <div class="col-md-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+          obcaecati molestias vitae excepturi eveniet, et, assumenda quia
+          doloribus debitis aliquid dolore. Sapiente labore nemo fuga, nam
+          similique consequatur ex sed.Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Voluptas, labore debitis! Odit in illo labore
+          corrupti velit nisi quas quis, veritatis consequuntur perspiciatis
+          nemo! Dolores reiciendis eveniet veritatis esse molestiae!tis! Odit in
+          illo labore corrupti velit nisi quas quis, veritatis consequuntur
+          perspiciatis nemo! Dolores reiciendis eveniet veritatis esse
+          molestiae!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptas, labore debitis! Odit in illo labore corrupti velit nisi quas
+          quis, veritatis consequuntur perspiciatis nemo! Dolores reiciendis
+          eveniet veritatis esse molestiae!tis! Odit in illo labore corrupti
+          velit nisi quas quis, veritatis consequuntur perspiciatis nemo!
+          Dolores reiciendis eveniet veritatis esse molestiae!Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit. Voluptas, labore debitis! Odit
+          in illo labore corrupti velit nisi quas quis, veritatis consequuntur
+          perspiciatis nemo! Dolores reiciendis eveniet veritatis esse
+          molestiae!tis! Odit in illo labore corrupti velit nisi quas quis,
+          veritatis consequuntur perspiciatis nemo! Dolores reiciendis eveniet
+          veritatis esse molestiae!
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $(document).on("click", ".nav-item a", function(e) {
+          $(this)
+            .parent()
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
